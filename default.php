@@ -303,7 +303,7 @@ class PurchasePremiumRoles extends Gdn_Plugin {
         //Collect Premium roles
         $PremiumRoleIDs = C('Plugins.PurchasePremiumRoles.IDs');
         if(!$PremiumRoleIDs){
-            $MarketProduct =  new MarketProduct();
+            $MarketProduct =  new MarketProductModel();
             $PremiumRoles = $MarketProduct->Get(100,0,'PurchasePremiumRoles');
             $PremiumRoleIDs =array();
             $RoleModel = new RoleModel();
