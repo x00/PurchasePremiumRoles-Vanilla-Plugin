@@ -43,7 +43,7 @@ class PurchasePremiumRoles extends Gdn_Plugin {
    
    /* role management */
     public function RoleCheck($Product){
-        if(!Gdn::Session()->isvalid())
+        if(!Gdn::Session()->IsValid())
             return FALSE;
         $User = Gdn::Session()->User;
         $Meta = Gdn_Format::Unserialize($Product->Meta);
