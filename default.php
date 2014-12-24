@@ -19,7 +19,7 @@ $PluginInfo['PurchasePremiumRoles'] = array(
    'SettingsPermission' => 'Garden.Settings.Manage',
    'RequiredPlugins' => array('MarketPlace' => '0.1.9b'),
    'RequiredApplications' => array('Dashboard' => '2.1'),
-   'Version' => '0.1.4b',
+   'Version' => '0.1.6b',
    'Author' => "Paul Thomas",
    'AuthorEmail' => 'dt01pqt_pt@yahoo.com'
 );
@@ -326,7 +326,7 @@ class PurchasePremiumRoles extends Gdn_Plugin {
             RoleModel::SetUserRoles($JoinUser, 'UserID');
         }
         //this is the expire cron
-        if(!Gdn::Session()->isValid()) return;
+        if(!Gdn::Session()->IsValid()) return;
             $this->RoleExpire(Gdn::Session()->User);
     }
     /* setup spec*/
