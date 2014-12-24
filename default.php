@@ -19,7 +19,7 @@ $PluginInfo['PurchasePremiumRoles'] = array(
    'SettingsPermission' => 'Garden.Settings.Manage',
    'RequiredPlugins' => array('MarketPlace' => '0.1.9b'),
    'RequiredApplications' => array('Dashboard' => '2.1'),
-   'Version' => '0.1.3b',
+   'Version' => '0.1.4b',
    'Author' => "Paul Thomas",
    'AuthorEmail' => 'dt01pqt_pt@yahoo.com'
 );
